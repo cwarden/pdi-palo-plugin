@@ -486,7 +486,7 @@ public class PaloHelper implements DatabaseFactoryInterface {
             Object dataValue = cells.get(i)[cells.get(i).length - 1];
             try {
                 if (dataValue instanceof Double)
-                    cube.setData(dimensions, (Double)dataValue);
+                    cube.setDataSplashed(dimensions, (Double)dataValue, 1);
                 else {
                     if (dataValue instanceof String)
                        cube.setData(dimensions, (String)dataValue);
